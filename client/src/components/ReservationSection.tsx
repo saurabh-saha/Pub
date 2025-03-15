@@ -15,7 +15,8 @@ const reservationFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
   email: z.string().email({ message: 'Please enter a valid email address' }),
   phone: z.string().min(10, { message: 'Please enter a valid phone number' }),
-  guests: z.string().min(1, { message: 'Please select number of guests' }),
+  guests: z.string().min(1, { message: 'Please select number of guests' })
+    .transform(val => parseInt(val)), // Transform string to number
   date: z.string().min(1, { message: 'Please select a date' }),
   time: z.string().min(1, { message: 'Please select a time' }),
   notes: z.string().optional()
@@ -31,7 +32,7 @@ const ReservationSection = () => {
       name: '',
       email: '',
       phone: '',
-      guests: '',
+      guests: '' as any, // Type assertion to handle the string-to-number conversion
       date: '',
       time: '',
       notes: ''
@@ -214,7 +215,7 @@ const ReservationSection = () => {
               <div className="md:col-span-2">
                 <Button 
                   type="submit" 
-                  className="w-full bg-secondary hover:bg-opacity-90 accent-font tracking-wide text-xl py-6"
+                  className="w-full bg-secondary hover:bg-opacity-90 accent-font tracking-wide text-xl py-6 text-white"
                   disabled={reservationMutation.isPending}
                 >
                   {reservationMutation.isPending ? 'PROCESSING...' : 'BOOK MY TABLE'}
