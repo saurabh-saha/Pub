@@ -19,7 +19,8 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
           <a 
             href="#menu" 
-            className="bg-secondary text-white px-8 py-3 rounded accent-font tracking-wide text-xl hover:bg-opacity-90 transition duration-300 shadow-lg border border-gray-800"
+            className="bg-secondary text-white px-10 py-4 rounded-md accent-font tracking-wide text-2xl hover:bg-opacity-90 transition duration-300 shadow-lg border-2 border-white font-bold"
+            style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}
           >
             EXPLORE MENU
           </a>
