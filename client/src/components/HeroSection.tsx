@@ -26,7 +26,8 @@ const HeroSection = () => {
           </a>
           <a 
             href="#reservation" 
-            className="border-2 border-white text-white px-8 py-3 rounded accent-font tracking-wide text-xl hover:bg-white hover:text-primary transition duration-300 shadow-lg"
+            className="border-3 border-white text-white px-10 py-4 rounded-md accent-font tracking-wide text-2xl hover:bg-white hover:text-primary transition duration-300 shadow-xl font-bold"
+            style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)', boxShadow: '0 4px 14px rgba(0,0,0,0.3), 0 0 0 3px rgba(255,255,255,0.8)' }}
           >
             BOOK A TABLE
           </a>

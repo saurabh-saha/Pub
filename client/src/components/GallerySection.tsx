@@ -26,7 +26,8 @@ const GallerySection = () => {
         <div className="text-center mt-12">
           <a 
             href="#" 
-            className="inline-block border-2 border-secondary text-secondary px-8 py-3 rounded accent-font tracking-wide text-xl hover:bg-secondary hover:text-white transition duration-300 shadow-lg"
+            className="inline-block bg-white text-secondary px-10 py-4 rounded-md accent-font tracking-wide text-2xl hover:bg-secondary hover:text-white transition duration-300 shadow-xl border-3 border-secondary font-bold"
+            style={{ boxShadow: '0 4px 14px rgba(0,0,0,0.2), 0 0 0 3px #E6A64C' }}
           >
             VIEW FULL GALLERY
           </a>

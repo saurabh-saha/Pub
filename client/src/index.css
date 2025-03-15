@@ -56,11 +56,11 @@
   }
   
   .menu-tab {
-    @apply bg-gray-200 text-gray-800 border border-gray-400;
+    @apply bg-gray-200 text-gray-800 border-2 border-gray-500 font-bold shadow-md;
   }
   
   .menu-tab.active {
-    @apply bg-secondary text-white border border-gray-800;
+    @apply bg-secondary text-white border-2 border-gray-800 shadow-lg;
   }
   
   .shadow-custom {
