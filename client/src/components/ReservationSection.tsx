@@ -124,7 +124,7 @@ const ReservationSection = () => {
                     <FormLabel>Number of Guests</FormLabel>
                     <Select 
                       onValueChange={field.onChange} 
-                      defaultValue={field.value}
+                      defaultValue={field.value ? String(field.value) : ""}
                     >
                       <FormControl>
                         <SelectTrigger>
@@ -169,7 +169,7 @@ const ReservationSection = () => {
                     <FormLabel>Time</FormLabel>
                     <Select 
                       onValueChange={field.onChange} 
-                      defaultValue={field.value}
+                      defaultValue={field.value || ""}
                     >
                       <FormControl>
                         <SelectTrigger>
