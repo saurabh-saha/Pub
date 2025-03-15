@@ -1,3 +1,5 @@
+import { FaCocktail, FaUtensils, FaMusic } from 'react-icons/fa';
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -54,37 +56,24 @@ const AboutSection = () => {
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gray-50 p-8 rounded-lg shadow-custom text-center">
-            <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-2 border-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-white">
-                <path d="M8 22h8" stroke="white" strokeWidth="2.5"></path>
-                <path d="M12 11v11" stroke="white" strokeWidth="2.5"></path>
-                <path d="M10 9a2 2 0 0 1-4 0c0-3 4-3 4-8 0 5 4 5 4 8a2 2 0 0 1-4 0" stroke="white" strokeWidth="2.5"></path>
-              </svg>
+            <div className="w-24 h-24 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-gray-100">
+              <FaCocktail className="text-white" size={48} />
             </div>
             <h3 className="text-xl font-bold mb-3">Craft Cocktails</h3>
             <p className="text-neutral-medium">Expertly crafted drinks using premium spirits, house-made ingredients, and innovative techniques.</p>
           </div>
           
           <div className="bg-gray-50 p-8 rounded-lg shadow-custom text-center">
-            <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-2 border-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" stroke="white" strokeWidth="2.5"></path>
-                <path d="M7 2v20" stroke="white" strokeWidth="2.5"></path>
-                <path d="M21 15V2" stroke="white" strokeWidth="2.5"></path>
-                <path d="M18 15c-1 0-4 1-4 4v1c0 1.7 1.3 3 3 3h2c1.7 0 3-1.3 3-3v-1c0-3-3-4-4-4Z" stroke="white" strokeWidth="2.5"></path>
-              </svg>
+            <div className="w-24 h-24 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-gray-100">
+              <FaUtensils className="text-white" size={48} />
             </div>
             <h3 className="text-xl font-bold mb-3">Inspired Cuisine</h3>
             <p className="text-neutral-medium">Seasonal small plates and entrees designed to complement our beverage program.</p>
           </div>
           
           <div className="bg-gray-50 p-8 rounded-lg shadow-custom text-center">
-            <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-2 border-gray-100">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 18V5l12-2v13" stroke="white" strokeWidth="2.5"></path>
-                <circle cx="6" cy="18" r="3" stroke="white" strokeWidth="2.5"></circle>
-                <circle cx="18" cy="16" r="3" stroke="white" strokeWidth="2.5"></circle>
-              </svg>
+            <div className="w-24 h-24 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-gray-100">
+              <FaMusic className="text-white" size={48} />
             </div>
             <h3 className="text-xl font-bold mb-3">Vibrant Atmosphere</h3>
             <p className="text-neutral-medium">Enjoy curated music, special events, and a welcoming space for socializing and relaxation.</p>
