@@ -62,12 +62,13 @@ const MenuSection = () => {
                   {cocktail.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex} 
-                      className={`${tag.color === 'primary' ? 'bg-gray-100 text-primary border border-primary' : 
-                                  tag.color === 'secondary' ? 'bg-gray-100 text-secondary border border-secondary' : 
-                                  'bg-gray-100 text-gray-800 border border-gray-400'} 
-                                  text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
+                      className={`${tag.color === 'primary' ? 'bg-primary bg-opacity-10 text-primary border-2 border-primary font-bold' : 
+                                  tag.color === 'secondary' ? 'bg-secondary bg-opacity-10 text-secondary border-2 border-secondary font-bold' : 
+                                  'bg-gray-200 text-gray-800 border-2 border-gray-600 font-bold'} 
+                                  text-xs px-4 py-2 rounded-full shadow-md ${tagIndex > 0 ? 'ml-3' : ''}`}
+                      style={{ textShadow: tag.color ? '0px 0px 1px rgba(0,0,0,0.2)' : 'none' }}
                     >
-                      {tag.name}
+                      {tag.name.toUpperCase()}
                     </span>
                   ))}
                 </div>
@@ -144,12 +145,13 @@ const MenuSection = () => {
                     {plate.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex} 
-                        className={`${tag.color === 'primary' ? 'bg-gray-100 text-primary border border-primary' : 
-                                    tag.color === 'secondary' ? 'bg-gray-100 text-secondary border border-secondary' : 
-                                    'bg-gray-100 text-gray-800 border border-gray-400'} 
-                                    text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
+                        className={`${tag.color === 'primary' ? 'bg-primary bg-opacity-10 text-primary border-2 border-primary font-bold' : 
+                                    tag.color === 'secondary' ? 'bg-secondary bg-opacity-10 text-secondary border-2 border-secondary font-bold' : 
+                                    'bg-gray-200 text-gray-800 border-2 border-gray-600 font-bold'} 
+                                    text-xs px-4 py-2 rounded-full shadow-md ${tagIndex > 0 ? 'ml-3' : ''}`}
+                        style={{ textShadow: tag.color ? '0px 0px 1px rgba(0,0,0,0.2)' : 'none' }}
                       >
-                        {tag.name}
+                        {tag.name.toUpperCase()}
                       </span>
                     ))}
                   </div>
@@ -176,12 +178,13 @@ const MenuSection = () => {
                     {entree.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex} 
-                        className={`${tag.color === 'primary' ? 'bg-gray-100 text-primary border border-primary' : 
-                                    tag.color === 'secondary' ? 'bg-gray-100 text-secondary border border-secondary' : 
-                                    'bg-gray-100 text-gray-800 border border-gray-400'} 
-                                    text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
+                        className={`${tag.color === 'primary' ? 'bg-primary bg-opacity-10 text-primary border-2 border-primary font-bold' : 
+                                    tag.color === 'secondary' ? 'bg-secondary bg-opacity-10 text-secondary border-2 border-secondary font-bold' : 
+                                    'bg-gray-200 text-gray-800 border-2 border-gray-600 font-bold'} 
+                                    text-xs px-4 py-2 rounded-full shadow-md ${tagIndex > 0 ? 'ml-3' : ''}`}
+                        style={{ textShadow: tag.color ? '0px 0px 1px rgba(0,0,0,0.2)' : 'none' }}
                       >
-                        {tag.name}
+                        {tag.name.toUpperCase()}
                       </span>
                     ))}
                   </div>
