@@ -24,6 +24,10 @@
     font-family: 'Bebas Neue', cursive;
   }
   
+  .text-neutral-medium {
+    @apply text-gray-700;
+  }
+  
   .nav-link {
     position: relative;
   }
@@ -52,11 +56,11 @@
   }
   
   .menu-tab {
-    @apply bg-gray-200 text-gray-800;
+    @apply bg-gray-200 text-gray-800 border border-gray-400;
   }
   
   .menu-tab.active {
-    @apply bg-secondary text-white;
+    @apply bg-secondary text-white border border-gray-800;
   }
   
   .shadow-custom {

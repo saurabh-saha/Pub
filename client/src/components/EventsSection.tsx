@@ -48,7 +48,7 @@ const EventsSection = () => {
         <div className="text-center mt-12">
           <a 
             href="#" 
-            className="inline-block bg-secondary text-white px-8 py-3 rounded accent-font tracking-wide text-xl hover:bg-opacity-90 transition duration-300 shadow-lg"
+            className="inline-block bg-secondary text-white px-8 py-3 rounded accent-font tracking-wide text-xl hover:bg-opacity-90 transition duration-300 shadow-lg border border-gray-800"
           >
             VIEW ALL EVENTS
           </a>

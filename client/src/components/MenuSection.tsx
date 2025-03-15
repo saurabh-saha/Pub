@@ -59,7 +59,10 @@ const MenuSection = () => {
                   {cocktail.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex} 
-                      className={`bg-${tag.color} bg-opacity-10 text-${tag.color} text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
+                      className={`${tag.color === 'primary' ? 'bg-gray-100 text-primary border border-primary' : 
+                                  tag.color === 'secondary' ? 'bg-gray-100 text-secondary border border-secondary' : 
+                                  'bg-gray-100 text-gray-800 border border-gray-400'} 
+                                  text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
                     >
                       {tag.name}
                     </span>
@@ -138,7 +141,10 @@ const MenuSection = () => {
                     {plate.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex} 
-                        className={`bg-${tag.color} bg-opacity-10 text-${tag.color} text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
+                        className={`${tag.color === 'primary' ? 'bg-gray-100 text-primary border border-primary' : 
+                                    tag.color === 'secondary' ? 'bg-gray-100 text-secondary border border-secondary' : 
+                                    'bg-gray-100 text-gray-800 border border-gray-400'} 
+                                    text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
                       >
                         {tag.name}
                       </span>
@@ -167,7 +173,10 @@ const MenuSection = () => {
                     {entree.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex} 
-                        className={`bg-${tag.color} bg-opacity-10 text-${tag.color} text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
+                        className={`${tag.color === 'primary' ? 'bg-gray-100 text-primary border border-primary' : 
+                                    tag.color === 'secondary' ? 'bg-gray-100 text-secondary border border-secondary' : 
+                                    'bg-gray-100 text-gray-800 border border-gray-400'} 
+                                    text-xs px-3 py-1 rounded-full ${tagIndex > 0 ? 'ml-2' : ''}`}
                       >
                         {tag.name}
                       </span>

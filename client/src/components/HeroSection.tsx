@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
           <a 
             href="#menu" 
-            className="bg-secondary text-white px-8 py-3 rounded accent-font tracking-wide text-xl hover:bg-opacity-90 transition duration-300 shadow-lg"
+            className="bg-secondary text-white px-8 py-3 rounded accent-font tracking-wide text-xl hover:bg-opacity-90 transition duration-300 shadow-lg border border-gray-800"
           >
             EXPLORE MENU
           </a>
