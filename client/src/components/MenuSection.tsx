@@ -18,25 +18,28 @@ const MenuSection = () => {
         
         {/* Menu Tabs */}
         <div className="flex justify-center mb-12">
-          <div className="inline-flex rounded-md shadow-sm" role="group">
+          <div className="inline-flex rounded-md shadow-lg" role="group" style={{ boxShadow: '0 6px 16px rgba(0,0,0,0.15)' }}>
             <button 
               type="button" 
-              className={`menu-tab px-6 py-3 text-sm font-medium rounded-l-lg focus:z-10 focus:outline-none ${activeTab === 'cocktails' ? 'active' : ''}`}
+              className={`menu-tab px-8 py-4 text-base font-bold rounded-l-lg focus:z-10 focus:outline-none ${activeTab === 'cocktails' ? 'active' : ''}`}
               onClick={() => setActiveTab('cocktails')}
+              style={activeTab === 'cocktails' ? { textShadow: '1px 1px 3px rgba(0,0,0,0.6)' } : {}}
             >
               Cocktails
             </button>
             <button 
               type="button" 
-              className={`menu-tab px-6 py-3 text-sm font-medium focus:z-10 focus:outline-none ${activeTab === 'wine' ? 'active' : ''}`}
+              className={`menu-tab px-8 py-4 text-base font-bold focus:z-10 focus:outline-none ${activeTab === 'wine' ? 'active' : ''}`}
               onClick={() => setActiveTab('wine')}
+              style={activeTab === 'wine' ? { textShadow: '1px 1px 3px rgba(0,0,0,0.6)' } : {}}
             >
               Wine & Beer
             </button>
             <button 
               type="button" 
-              className={`menu-tab px-6 py-3 text-sm font-medium rounded-r-lg focus:z-10 focus:outline-none ${activeTab === 'food' ? 'active' : ''}`}
+              className={`menu-tab px-8 py-4 text-base font-bold rounded-r-lg focus:z-10 focus:outline-none ${activeTab === 'food' ? 'active' : ''}`}
               onClick={() => setActiveTab('food')}
+              style={activeTab === 'food' ? { textShadow: '1px 1px 3px rgba(0,0,0,0.6)' } : {}}
             >
               Food
             </button>
